@@ -1,0 +1,55 @@
+{% include "header.html" %}
+
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <span class="fs-4"><strong>Clement Wiredu</strong></span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="{{ url_for('resume' )}}" class="nav-link">Resume</a></li>
+      <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="../static/img/C.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="400" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <p class="lead">I can help your business to</p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Grow online and <br>grow fast</h1><br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <button type="button" class="btn btn-dark btn-lg px-4 me-md-2"><a href="{{ url_for('resume' )}}" class="nav-link">Resume</a></button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold text-body-emphasis">About Me</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+        I'm <strong>Clement Wiredu</strong> a versatile web developer passionate about creating 
+        innovative digital solutions. With expertise in frontend and backend development, 
+        I specialize in crafting engaging user interfaces and robust backend systems. 
+        My toolkit includes proficiency in HTML, CSS, Bootstrap, Python, and Flask framework. 
+        Whether it's designing responsive layouts, implementing 
+        interactive features, or optimizing backend performance, I thrive on delivering seamless 
+        and impactful web experiences. Explore my portfolio to see how I can help turn your digital 
+        vision into reality.
+        <br>
+        <p><img src="../static/svg/interest.svg"><strong>Interests: </strong>Programming, Music & Cars</p>
+      </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}

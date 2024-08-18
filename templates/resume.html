@@ -1,0 +1,80 @@
+{% include "header.html" %}
+
+<div class="container">
+   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+         <span class="fs-4"><strong>Clement Wiredu</strong></span>
+      </a>
+      
+      <ul class="nav nav-pills">
+         <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+         <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Resume</a></li>
+         <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+         <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+      </ul>
+      </header>
+
+      <h1 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><strong>RESUME</strong></h1>
+      <br>
+
+   <div class="p-5 text-center bg-body-tertiary rounded-3">
+      <p class="card-heading">Professional Summary</p>
+      <div class="resume">
+         <header>
+             <p><strong>2023 - Present</strong></p>
+         </header>
+         <p>
+            Enthusiastic and self-motivated developer with a strong foundation in Web development & Python programming. 
+            Completed specialized courses on Udemy, and independently built several projects that demonstrate my 
+            ability to apply my knowledge in real-world scenarios. Passionate about continuous learning and 
+            developing innovative solutions.
+         </p>
+      </div> 
+
+      <br><br>
+
+      <p class="card-heading">Education</p>
+      <div class="resume">
+            <ul>
+               <li>Koforidua Senior High Technical School [2019 - 2022]</li>
+               <li>100 Days of Python - Udemy [2024]</li>
+               <li>Flask Bootcamp - Udemy [2024]</li>
+            </ul>
+      </div> 
+
+      <br><br>
+
+      <div class="resume">
+         <p class="card-heading" style="text-align: center;"><img src="../static/svg/skills.svg" alt="skillset"> Professional Skills</p>
+         <ul>
+            <li>Web Development</li>
+            <li>Teamwork & Collaboration</li>
+            <li>Entrepreneurial Mindset</li>
+            <br><br>
+         </ul>
+         
+
+         <p class="card-heading" style="text-align: center;"><img src="../static/svg/code.svg" alt="code"> Languauges & Frameworks</p>
+         <img src="../static/svg/html.svg">
+         <img src="../static/svg/css.svg">
+         <img src="../static/svg/bootstrap.svg">
+         <img src="../static/svg/python.svg">
+         <img src="../static/svg/flask.svg">
+
+      </div>
+      
+      <br><br>
+
+      <p>
+         <a href="{{ url_for('static', filename='cv.pdf') }}" target="_blank" class="btn btn-dark">
+             <img src="../static/svg/download.svg" alt="Download Icon" style="margin-right: 8px;">
+             Download Resume
+         </a>
+     </p>     
+     
+   </div>
+
+
+
+
+{% include "footer.html" %}
